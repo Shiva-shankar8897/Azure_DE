@@ -93,6 +93,11 @@
 				]
 			}
 		],
+		"variables": {
+			"Shankar": {
+				"type": "Array"
+			}
+		},
 		"annotations": [],
 		"lastPublishTime": "2025-01-09T07:44:54Z"
 	},
