@@ -1,0 +1,39 @@
+{
+	"$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+	"contentVersion": "1.0.0.0",
+	"parameters": {
+		"factoryName": {
+			"value": "JdbcADF"
+		},
+		"AzureDataLakeStorage1_accountKey": {
+			"value": ""
+		},
+		"ls_MySql_password": {
+			"value": ""
+		},
+		"ls_jdbc_accessToken": {
+			"value": ""
+		},
+		"AzureDataLakeStorage1_properties_typeProperties_url": {
+			"value": "https://sskstorage9.dfs.core.windows.net/"
+		},
+		"ls_MySql_properties_typeProperties_server": {
+			"value": "127.0.0.1"
+		},
+		"ls_MySql_properties_typeProperties_database": {
+			"value": "ssk"
+		},
+		"ls_MySql_properties_typeProperties_username": {
+			"value": "root"
+		},
+		"ls_jdbc_properties_typeProperties_existingClusterId": {
+			"value": "1220-062953-76qyn9n7"
+		},
+		"containerUri": {
+			"value": ""
+		},
+		"containerSasToken": {
+			"value": ""
+		}
+	}
+}
