@@ -417,7 +417,14 @@
 					{
 						"name": "Lookup1",
 						"type": "Lookup",
-						"dependsOn": [],
+						"dependsOn": [
+							{
+								"activity": "Execute Pipeline1",
+								"dependencyConditions": [
+									"Completed"
+								]
+							}
+						],
 						"policy": {
 							"timeout": "0.12:00:00",
 							"retry": 0,
@@ -426,7 +433,17 @@
 							"secureInput": false
 						},
 						"userProperties": [],
-						"typeProperties": {}
+						"typeProperties": {
+							"source": {
+								"type": "MySqlSource"
+							},
+							"dataset": {
+								"referenceName": "MySqlTable1",
+								"type": "DatasetReference",
+								"parameters": {}
+							},
+							"firstRowOnly": false
+						}
 					}
 				],
 				"policy": {
@@ -441,7 +458,8 @@
 			},
 			"dependsOn": [
 				"[concat(variables('factoryId'), '/datasets/DelimitedText1')]",
-				"[concat(variables('factoryId'), '/pipelines/pl_selfhosting')]"
+				"[concat(variables('factoryId'), '/pipelines/pl_selfhosting')]",
+				"[concat(variables('factoryId'), '/datasets/MySqlTable1')]"
 			]
 		}
 	]
