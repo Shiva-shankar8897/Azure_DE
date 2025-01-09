@@ -9,7 +9,7 @@
 		"type": "MySqlTable",
 		"schema": [],
 		"typeProperties": {
-			"tableName": "`onpremise`"
+			"tableName": "`accounts`"
 		}
 	},
 	"type": "Microsoft.DataFactory/factories/datasets"
